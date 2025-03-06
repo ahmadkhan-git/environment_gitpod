@@ -6,7 +6,7 @@ ENV TZ=Etc/UTC
 
 # Update the system and install base-devel and other essential tools
 RUN pacman -Syu --noconfirm \
-    && pacman -S --noconfirm base-devel git vim sudo curl wget ccache automake lzop bison gperf base-devel zip curl zlib gcc-multilib libxml2 bzip2 squashfs-tools pngcrush schedtool dpkg lz4 make optipng cpio less python nano bc
+    && pacman -S --noconfirm base-devel git vim sudo curl wget ccache automake lzop bison gperf base-devel zip curl zlib gcc-multilib libxml2 bzip2 squashfs-tools pngcrush schedtool dpkg lz4 make optipng cpio less python nano bc aarch64-linux-gnu-binutils aarch64-linux-gnu-gcc openssh 
 
 # Create the gitpod group with the specific GID
 RUN groupadd -g 33333 gitpod
